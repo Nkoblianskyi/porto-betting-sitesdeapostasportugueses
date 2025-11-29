@@ -20,7 +20,6 @@ export const metadata: Metadata = {
     "X-Frame-Options": "DENY",
     "X-XSS-Protection": "1; mode=block",
   },
-    generator: 'v0.app'
 }
 
 export const viewport = {
