@@ -1,5 +1,6 @@
 import Link from "next/link"
 import { ArrowLeft, AlertTriangle, Shield, Heart, Phone, Lock, Clock } from "lucide-react"
+import { Header } from "@/components/header"
 
 export default function ResponsibleGamingPage() {
   return (
@@ -12,6 +13,7 @@ export default function ResponsibleGamingPage() {
         backgroundAttachment: "fixed",
       }}
     >
+      <Header />
       <div className="absolute inset-0 bg-gradient-to-b from-black/90 via-black/85 to-black/90 z-0" />
 
       <div className="relative z-10">
@@ -19,12 +21,6 @@ export default function ResponsibleGamingPage() {
         <header className="bg-black/60 backdrop-blur-md border-b border-primary/20 sticky top-0 z-50">
           <div className="container mx-auto max-w-[1220px] px-4 py-4">
             <div className="flex items-center justify-between">
-              <Link href="/" className="flex items-center gap-3">
-                <div className="w-10 h-10 bg-primary rounded flex items-center justify-center">
-                  <Shield className="w-6 h-6 text-primary-foreground" />
-                </div>
-                <span className="font-heading text-lg font-bold text-foreground">sitesdeapostasportugueses</span>
-              </Link>
               <Link
                 href="/"
                 className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors text-sm"
@@ -40,7 +36,6 @@ export default function ResponsibleGamingPage() {
         <div className="bg-emerald-900/30 border-b border-emerald-700/30 py-12">
           <div className="container mx-auto max-w-[1220px] px-4">
             <div className="flex items-center gap-4 mb-2">
-              <Shield className="w-10 h-10 text-emerald-400" />
               <h1 className="font-heading text-3xl md:text-4xl font-bold text-foreground uppercase tracking-wide">
                 Jogo Responsável
               </h1>
